@@ -69,6 +69,7 @@ public class Ui {
                 + "Total item(s) in list: " + listSize + '\n');
         showLine();
     }
+
     public static void addTransactionMessage(Transaction transaction, int listSize) {
         showLine();
         assert listSize >= 0;
@@ -76,6 +77,7 @@ public class Ui {
                 + "Total transaction(s) in list: " + listSize + '\n');
         showLine();
     }
+
     public static void deleteTransactionMessage(Transaction transaction,int listSize) {
         showLine();
         assert listSize >= 0;
@@ -83,6 +85,7 @@ public class Ui {
                 + "Total item(s) in list: " + listSize + '\n');
         showLine();
     }
+
     public static void addUserMessage(User user, int listSize) {
         showLine();
         assert listSize >= 0;
