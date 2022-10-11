@@ -11,10 +11,8 @@ import java.util.logging.Logger;
 import java.util.logging.Level;
 
 public class Ui {
-
     private static final Scanner input = new Scanner(System.in);
     private static Logger logger = Logger.getLogger("Foo");
-
 
     public static final String logo =
             "                             _      "
@@ -49,7 +47,7 @@ public class Ui {
         showLine();
     }
 
-    public static final String readInput() {
+    public static String readInput() {
         return input.nextLine();
     }
 
@@ -69,7 +67,7 @@ public class Ui {
                 + "Total item(s) in list: " + listSize + '\n');
         showLine();
     }
-
+    
     public static void addTransactionMessage(Transaction transaction, int listSize) {
         showLine();
         assert listSize >= 0;
@@ -77,7 +75,7 @@ public class Ui {
                 + "Total transaction(s) in list: " + listSize + '\n');
         showLine();
     }
-
+    
     public static void deleteTransactionMessage(Transaction transaction,int listSize) {
         showLine();
         assert listSize >= 0;
@@ -85,7 +83,7 @@ public class Ui {
                 + "Total item(s) in list: " + listSize + '\n');
         showLine();
     }
-
+    
     public static void addUserMessage(User user, int listSize) {
         showLine();
         assert listSize >= 0;
@@ -101,8 +99,6 @@ public class Ui {
                 + "\n" + "Total user(s) in list: " + listSize + '\n');
         showLine();
     }
-
-
 
     /**
      * display the entire list of items to the user.
